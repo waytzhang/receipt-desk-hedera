@@ -8,6 +8,17 @@ Built with Codex. This is a new development template, not an audited production 
 
 Requires Node.js 22 LTS (22.14+) or 24+, and npm. Foundry (`forge`) is required for contract compilation and tests. The UI and content tests do not need a wallet, API key, or paid service.
 
+Create a project from the public template:
+
+```sh
+npm create scaffold-hbar@latest -- receipt-desk --template waytzhang/receipt-desk-hedera --yes --skip-hedera-skills
+cd receipt-desk
+```
+
+The installer needs Git and Foundry on your PATH. Version 0.4.1 also installs its default Foundry libraries; Receipt Desk's contract and contract tests do not import those libraries. Optional Hedera Skills are skipped in the command above. You can instead clone this repository and run `npm install`.
+
+Run the checks and start the app:
+
 ```sh
 npm install
 npm test
@@ -19,7 +30,7 @@ npm run dev
 
 Open the localhost address printed by Next.js. Select `examples/abc.txt` to check a small local file. With its CID still entered, selecting `examples/changed.txt` must produce a content mismatch and clear the previous proof. Nothing is uploaded.
 
-The repository includes `template.json` for the `create-scaffold-hbar` community-template interface. A public-repository scaffolding check is still pending; a local build alone is not proof that this integration works.
+The repository includes `template.json` for the `create-scaffold-hbar` community-template interface and the formatter hook used by that installer. See [VERIFICATION.md](VERIFICATION.md) for the public-repository installation check and remaining live checks. `npm run format` formats source and documentation without touching keys, environment files, or build output.
 
 ## What the workflow does
 

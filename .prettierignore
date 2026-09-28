@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+cache/
+broadcast/
+lib/
+private/
+runtime/
+.env*
+*.log
+*.tsbuildinfo
+package-lock.json
+packages/nextjs/next-env.d.ts

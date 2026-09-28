@@ -1,5 +1,15 @@
 {
-  "name": "@sh/foundry", "version": "0.1.0", "private": true,
-  "scripts": { "build": "forge build", "test": "forge test", "format": "forge fmt", "lint": "forge fmt --check", "deploy:testnet": "node scripts/deploy.mjs" },
-  "dependencies": { "ethers": "6.17.0" }
+  "name": "@sh/foundry",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "forge build",
+    "test": "forge test",
+    "format": "forge fmt",
+    "lint": "forge fmt --check",
+    "deploy:testnet": "node scripts/deploy.mjs"
+  },
+  "dependencies": {
+    "ethers": "6.17.0"
+  }
 }

@@ -3,8 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "workspaces": ["packages/core", "packages/foundry", "packages/nextjs"],
-  "engines": { "node": "^22.14.0 || >=24.0.0" },
+  "workspaces": [
+    "packages/core",
+    "packages/foundry",
+    "packages/nextjs"
+  ],
+  "engines": {
+    "node": "^22.14.0 || >=24.0.0"
+  },
   "scripts": {
     "dev": "npm run dev -w @sh/nextjs",
     "next:dev": "npm run dev -w @sh/nextjs",
@@ -12,7 +18,13 @@
     "lint": "npm run lint -w @sh/nextjs",
     "test": "tsx --test packages/core/test/*.test.ts",
     "foundry:build": "npm run build -w @sh/foundry",
-    "foundry:test": "npm run test -w @sh/foundry"
+    "foundry:test": "npm run test -w @sh/foundry",
+    "format": "prettier --write . --ignore-unknown"
   },
-  "devDependencies": { "tsx": "4.23.15", "typescript": "5.9.3", "@types/node": "^24.0.0" }
+  "devDependencies": {
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "@types/node": "^24.0.0",
+    "prettier": "3.9.9"
+  }
 }
