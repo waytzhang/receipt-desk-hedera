@@ -1,0 +1,14 @@
+{
+  "name": "receipt-desk",
+  "description": "Verify raw IPFS document bytes and record versioned publisher attestations on Hedera testnet.",
+  "create-scaffold-hbar": {
+    "capabilities": { "frontend": ["nextjs-app"], "solidityFramework": ["foundry"], "packageManager": ["npm"] },
+    "defaults": { "frontend": "nextjs-app", "solidityFramework": "foundry", "packageManager": "npm" },
+    "outro": { "sections": [{ "title": "Receipt Desk", "steps": [
+      { "label": "Check the content verifier", "command": "{run:test}" },
+      { "label": "Check the registry", "command": "{run:foundry:test}" },
+      { "label": "Start the application", "command": "{run:next:dev}" },
+      { "text": "Read README.md before deploying. This template targets Hedera testnet only." }
+    ] }] }
+  }
+}
