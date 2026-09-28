@@ -4,6 +4,8 @@ Check public document bytes against a publisher's versioned receipt on Hedera te
 
 Built with Codex. This is a new development template, not an audited production system. See [VERIFICATION.md](VERIFICATION.md) for exactly what has been checked and which submission requirements remain open.
 
+![Receipt Desk checking the local three-byte example; no on-chain receipt claimed](docs/receipt-desk.png)
+
 ## Quick start
 
 Requires Node.js 22 LTS (22.14+) or 24+, and npm. Foundry (`forge`) is required for contract compilation and tests. The UI and content tests do not need a wallet, API key, or paid service.
